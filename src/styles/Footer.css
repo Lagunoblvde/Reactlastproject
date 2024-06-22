@@ -1,0 +1,93 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  cursor: pointer;
+}
+
+.footer.expanded {
+  height: 400px; /* Высота при клике */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer.expanded .footerContent {
+  opacity: 1;
+}
+
+.footerInfo, .footerForm {
+  width: 45%;
+  text-align: left;
+}
+
+.footer p {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.footer h2{
+  font-size: 18px;
+}
+
+.footer.expanded p {
+  opacity: 0;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%; /* Убедитесь, что ширина установлена в 100% */
+  max-width: 300px; /* Установите максимальную ширину */
+  padding: 5px; /* Уменьшение padding */
+  font-size: 14px; /* Уменьшение размера шрифта */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1a1a1a;
+  color: white;
+  border:none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555; /* Измените цвет при наведении */
+}
+
+.logoDescription {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #aaa;
+  opacity: 0; /* Скрыть текст по умолчанию */
+  transition: opacity 0.3s ease;
+}
+
+.footer.expanded .logoDescription {
+  opacity: 1; 
+}

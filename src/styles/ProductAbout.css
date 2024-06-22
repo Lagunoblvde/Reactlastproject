@@ -1,0 +1,75 @@
+.product-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Для позиционирования кнопки закрытия */
+}
+
+.product-modal h2 {
+  margin-bottom: 6px;
+}
+
+.product-modal img {
+  max-width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.product-modal p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.product-modal .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-modal .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-modal .add-to-cart {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745; /* Зеленый цвет для кнопки "Добавить в корзину" */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-modal .add-to-cart:hover {
+  background-color: #218838;
+}
+
+.product-modal .add-to-favorites {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffc107; /* Желтый цвет для кнопки "Добавить в избранное" */
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-modal .add-to-favorites:hover {
+  background-color: #e0a800;
+}
+
+.product-modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.product-modal .close-button:hover {
+  color: #c82333;
+}

@@ -1,0 +1,45 @@
+.favorites {
+    margin-top: 100px; /* Отступ сверху для блока избранного */
+    padding: 20px;
+  }
+  
+  .productsContainer {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 1200px) {
+    .productsContainer {
+      grid-template-columns: repeat(5, 1fr) !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .productsContainer {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .productsContainer {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  
